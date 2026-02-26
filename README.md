@@ -22,7 +22,6 @@ I assume it should work for most versions but I haven't tested
 # Building and Running on Linux
 
 ```bash
-cd hello-maven
 mvn package
 java -cp target/hello-maven-1.0-SNAPSHOT.jar com.awar905.hellomaven.App
 ```
