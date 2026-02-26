@@ -60,12 +60,15 @@ public abstract class Psr implements PsrAPI {
     // Scissors > Paper
     // Rock > Scissors
     switch(player1) {
-      case Move.PAPER:
+      case PAPER:
         return player2 == Move.ROCK ? 1 : 2;
-      case Move.SCISSORS:
+      case SCISSORS:
         return player2 == Move.PAPER ? 1 : 2;
-      case Move.ROCK:
+      case ROCK:
         return player2 == Move.SCISSORS ? 1 : 2;
     }
+
+    // This should be unreachable
+    return 0;
   }
 }

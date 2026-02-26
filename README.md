@@ -19,9 +19,19 @@ If you want to know the commands I used, they are the exact commands described i
 For this, I am using Java 25 and Apache Maven 3.9.12. 
 I assume it should work for most versions but I haven't tested
 
-# Building and Running on Linux
+# Building Project
+
+## Linux
 
 ```bash
 mvn package
 java -cp target/hello-maven-1.0-SNAPSHOT.jar com.awar905.hellomaven.App
 ```
+
+## Documentation
+
+```bash
+mvn javadoc:javadoc
+```
+
+Documentation is generated to `target/reports/apidocs/`
